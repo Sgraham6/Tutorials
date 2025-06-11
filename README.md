@@ -4,3 +4,6 @@ https://docs.github.com/en/repositories/working-with-files/managing-large-files/
 ### Next Steps in Terminal
 1. Make local clone of repository and change directory to it with cd (directory)
 2. Then run: $ git push origin main
+
+## Tutorials Link
+https://skills.github.com
