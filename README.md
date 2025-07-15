@@ -17,3 +17,14 @@ https://docs.github.com/en/repositories/working-with-files/managing-large-files/
 
 ## Tutorials Link
 https://skills.github.com
+
+## New SSH
+In terminal:
+1. type: ssh-keygen -t ed25519 -C "srgraham1114@gmail.com"
+2. Press Enter twice
+3. type: eval "$(ssh-agent -s)"
+4. type: cat ~/.ssh/id_ed25519.pub
+5. Copy resulting string
+6. Go to GitHub -> Settings -> SSH and GPG Keys
+7. Create a new key, give it a title, and paste the string in "Key"
+8. Click "Add SSH key" 
