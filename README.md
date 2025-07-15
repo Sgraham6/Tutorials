@@ -25,7 +25,8 @@ In terminal:
 3. type: eval "$(ssh-agent -s)"
 4. type: cat ~/.ssh/id_ed25519.pub
 5. Copy resulting string
-Next?
+
+Next:
 1. Go to GitHub -> Settings -> SSH and GPG Keys
 2. Create a new key, give it a title, and paste the string in "Key"
 3. Click "Add SSH key" 
