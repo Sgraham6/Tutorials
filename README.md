@@ -23,10 +23,20 @@ In terminal:
 1. type: ssh-keygen -t ed25519 -C "srgraham1114@gmail.com"
 2. Press Enter twice
 3. type: eval "$(ssh-agent -s)"
-4. type: cat ~/.ssh/id_ed25519.pub
-5. Copy resulting string
+4. type: ssh-add ~/.ssh/id_ed25519
+5. type: ssh-add -l
+6. type: cat ~/.ssh/id_ed25519.pub
+7. Copy resulting string
 
 Next:
 1. Go to GitHub -> Settings -> SSH and GPG Keys
 2. Create a new key, give it a title, and paste the string in "Key"
-3. Click "Add SSH key" 
+3. Click "Add SSH key"
+
+Back in the terminal:
+1. type: ssh -T git@github.com
+
+## If Terminal asks for password
+1. Go to Finder -> Search -> Keychain Access
+2. Open up the GitHub entry
+3. Check the password and use that in the terminal
